@@ -7,7 +7,7 @@ statements certified on an initial range by `native_decide`.
 
 | | |
 |---|---|
-| Modules | 2 (`Basic`, `Congruences`) |
+| Modules | 3 (`Basic`, `Congruences`, `Taxicab`) |
 | Build | `lake build` → **0 errors** |
 | `sorry` count | **0** |
 | New `axiom` declarations | **0** |
@@ -35,6 +35,7 @@ p(5n + 4) ≡ 0 (mod 5),    p(7n + 5) ≡ 0 (mod 7),    p(11n + 6) ≡ 0 (mod 11
 |---|---|
 | `Basic.lean` | computable `partition`; values `p(0..10)`, `p(100)` by `native_decide` |
 | `Congruences.lean` | `mod5_below_100`, `mod7_below_80`, `mod11_below_60` (kernel-verified ranges); classes `PartitionMod5/7/11` for the general statements |
+| `Taxicab.lean` | the Hardy–Ramanujan number `Ta(2) = 1729 = 1³+12³ = 9³+10³`, proved the **smallest** sum of two positive cubes in two ways |
 
 ## Assumptions surface
 

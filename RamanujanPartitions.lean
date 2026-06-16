@@ -1,2 +1,3 @@
 import RamanujanPartitions.Basic
 import RamanujanPartitions.Congruences
+import RamanujanPartitions.Taxicab
