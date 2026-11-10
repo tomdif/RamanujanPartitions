@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-10",
+  "status": "passed",
+  "build": {
+    "command": "lake build",
+    "exit_code": 0,
+    "jobs": 8386
+  },
+  "audit": {
+    "command": "lake env lean scripts/audit.lean",
+    "exit_code": 0,
+    "declarations": 6,
+    "output": "publication_2026_11_10.axioms.txt",
+    "trust": "Native evaluation certificates include generated _native.native_decide.ax_1_1 axioms; this is not a standard-three-axiom audit."
+  },
+  "scope": [
+    "Finite recurrence computations and the bounded taxicab counter.",
+    "The recurrence/cardinality bridge and general partition congruences remain unproved in this package."
+  ],
+  "source_sha256": {
+    "lean-toolchain": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+    "lake-manifest.json": "5990cea40fe49b50761d29c7c8daf26280c92c8d33c658446eff1600cb02522d",
+    "RamanujanPartitions.lean": "6b31fbd8fae2b26b1ebf4ba220a0526af8b8755c033f809994f13171901d7402",
+    "RamanujanPartitions/Basic.lean": "4514f71838018d4eee924e20d690f37e8ca78e455349b658c9aa68671cfaff74",
+    "RamanujanPartitions/Congruences.lean": "533d7863a58e761af6a094bd5513bd6308a19853e1d59474c3384281768dbe83",
+    "RamanujanPartitions/Taxicab.lean": "4f5ebbdfecffd08c4f66877a3c6d13ceeffc15398fce3ec9a77444a149a72023",
+    "scripts/audit.lean": "97c42f6dc78e9a591e4513bf48f95029a06547e541c140f450c076cea809d296"
+  }
+}

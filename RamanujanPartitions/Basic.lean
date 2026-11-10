@@ -2,8 +2,9 @@ import Mathlib
 
 /-! # The partition function `p(n)`, computably
 
-`p(n)` is the number of partitions of `n`. Mathlib has the *type* `Nat.Partition n` but not a computable
-counting function. We define one via **Euler's pentagonal-number recurrence**
+`partition n` is a recurrence-defined candidate for the number of partitions of `n`;
+this package does not yet prove the equality with `Nat.Partition` cardinalities.
+The implementation uses an explicit computable recurrence. We define one via **Euler's pentagonal-number recurrence**
 
 `p(n) = Σ_{k≥1} (-1)^{k-1} [ p(n - k(3k-1)/2) + p(n - k(3k+1)/2) ]`,
 

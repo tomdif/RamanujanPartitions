@@ -1,0 +1,17 @@
+'RamanujanPartitions.p_hundred' depends on axioms: [propext,
+ Quot.sound,
+ RamanujanPartitions.p_hundred._native.native_decide.ax_1_1]
+'RamanujanPartitions.mod5_below_100' depends on axioms: [propext,
+ Quot.sound,
+ RamanujanPartitions.mod5_below_100._native.native_decide.ax_1_1]
+'RamanujanPartitions.mod7_below_80' depends on axioms: [propext,
+ Quot.sound,
+ RamanujanPartitions.mod7_below_80._native.native_decide.ax_1_1]
+'RamanujanPartitions.mod11_below_60' depends on axioms: [propext,
+ Quot.sound,
+ RamanujanPartitions.mod11_below_60._native.native_decide.ax_1_1]
+'RamanujanPartitions.Taxicab.taxicab_two_ways' depends on axioms: [propext]
+'RamanujanPartitions.Taxicab.hardy_ramanujan_1729' depends on axioms: [propext,
+ Quot.sound,
+ RamanujanPartitions.Taxicab.taxicab_minimal._native.native_decide.ax_1_1,
+ RamanujanPartitions.Taxicab.taxicab_repCount._native.native_decide.ax_1_1]

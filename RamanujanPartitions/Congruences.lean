@@ -8,16 +8,17 @@ p(5n + 4) ≡ 0 (mod 5),   p(7n + 5) ≡ 0 (mod 7),   p(11n + 6) ≡ 0 (mod 11).
 ```
 They are the first and most famous facts of the arithmetic theory of partitions.
 
-Following the discipline of [RamanujanTau](https://github.com/tomdif/RamanujanTau): the general statements
-are exposed as hypothesis **classes** (never `axiom`s), and we certify each on an initial range by direct
-computation (`native_decide`) — kernel-owned, honest partial evidence. The general proofs use the
+The general statements are exposed as hypothesis **classes** (never `axiom`s),
+and we certify each on an initial range by direct
+computation (`native_decide`), which trusts compiled evaluation. The general proofs use the
 generating-function / `q`-series identities (e.g. `Σ p(5n+4) qⁿ = 5 · ∏(1-q^{5n})⁵ / (1-qⁿ)⁶`), which
-require `η`-quotient machinery not yet in Mathlib — the same horizon as discharging `TauHeckeMaster`.
+are formalized in the companion RamanujanLean repository. Transferring them here still requires
+identifying this recurrence-defined sequence with actual partition cardinalities.
 -/
 
 namespace RamanujanPartitions
 
-/-! ## Kernel-verified evidence (each by `native_decide` over an initial range) -/
+/-! ## Finite computational certificates (each by `native_decide` over an initial range) -/
 
 /-- `p(5n + 4) ≡ 0 (mod 5)` for all `n < 100`. -/
 theorem mod5_below_100 : ∀ n, n < 100 → partition (5 * n + 4) % 5 = 0 := by native_decide
